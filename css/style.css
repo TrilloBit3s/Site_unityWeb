@@ -1,0 +1,131 @@
+/*Zera as configurações do css*/
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+   /* font-family: 'Poppins', sans-serif;*/
+}
+
+/*Cores*/
+:root {
+    --cor-fundo: rgb(34, 41, 37);
+    --cor-hover: rgb(89, 55, 209);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+/*Cor do fundo da tela*/
+body{
+    background-color: #3f3d3d;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Menu principal Horizontal*/
+.dp-menu ul {  
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0px;  
+    width:100%;  
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+/*tempo de transição de cor*/
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*Menu / Sub-Menu*/
+.dp-menu ul ul {
+    display: none; /*esconde display*/
+    left: 0;
+    position: absolute;
+    width: 150px
+}
+
+/*Faz o sub-Menu reaparecer*/
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+/*Faz o sub-sub-menu aparecer do lado*/
+.dp-menu ul ul ul{
+    margin-left: 151px;
+    top: 0px;
+    position: absolute;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+
+/*Sub-sub-sub-menu desaparecer*/
+.dp-menu ul ul ul li{
+    display: none; /*esconde display*/
+}
+
+/*Sub-sub-sub-menu aparecer*/
+.dp-menu ul li ul li:hover li {
+    display: block;
+}
+
+/*resolvendo problema de cor na lista*/
+.dp-menu a{
+    color: white; /*faz a cor do link voltar ao padrão*/
+    text-decoration: none; /*faz as cores nao ficarem marcadas*/
+}
+
+/*posição da imagem banner*/
+.banner-top {
+    background-image: url(../imagem/fundo-top.png);
+    background-position: top;
+    margin: 0 auto;
+}
+
+/*Título da pagina*/
+.profile-title{
+    vertical-align: top;
+    width: 59%;
+    animation-name: title-capa;
+    animation-duration: 2s;
+}
+
+/*Título da pagina*/
+.profile-title h1{
+    text-transform: uppercase;
+    font-size: 90;
+    margin-top: 435px;
+    font-weight: 400px;
+}
+
+/*Título da pagina*/
+.profile-title {
+    text-align: center;
+    width: 100%;
+}
+
+/*
+.redes-sociais ol li{
+    margin-left: 20px;    
+    display: inline-block; 
+    list-style: none; 
+}
+
+.redes-sociais{
+    float: right;
+    margin: -5px auto;
+    height: 10px;
+}
+*/
